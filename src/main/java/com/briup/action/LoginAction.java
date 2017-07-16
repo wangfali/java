@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import com.briup.entity.User;
 import com.briup.service.UserService;
@@ -25,7 +24,6 @@ import com.briup.service.UserService;
  */
 @Controller
 @EnableCaching
-@EnableWebMvc
 public class LoginAction {
 	@Autowired
 	UserService userService;
