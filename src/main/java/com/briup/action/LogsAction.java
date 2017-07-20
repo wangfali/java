@@ -19,7 +19,7 @@ import com.briup.util.LogUtil;
 @Controller
 public class LogsAction {
 	private static final Logger LOGGER=LoggerFactory.getLogger(LogsAction.class);
-	@RequestMapping(value={"/**","/"},method=RequestMethod.GET)
+	//@RequestMapping(value={"/**","/"},method=RequestMethod.GET)
 	public void createLog(){
 		LOGGER.info("==============info");
 		LOGGER.debug("=============debag");

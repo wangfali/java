@@ -8,11 +8,11 @@ package com.briup.util;
 *
  */
 
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LogUtil {
-	private static final Logger LOGGER=(Logger) LoggerFactory.getLogger(LogUtil.class);
+	private static final Logger LOGGER= (Logger) LoggerFactory.getLogger(LogUtil.class);
 	public static void createLog(){
 		LOGGER.info("-------------------info");
 		LOGGER.debug("-------------------debug");
