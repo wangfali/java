@@ -1,6 +1,6 @@
 package com.briup.action;
 
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -19,7 +19,7 @@ import com.briup.exception.MineException;
  */
 @Controller
 public class ErrorTestContorller {
-	private final static Logger LOGGER = (Logger) LoggerFactory.getLogger(ErrorTestContorller.class);
+	private final static Logger LOGGER =  LoggerFactory.getLogger(ErrorTestContorller.class);
 
 	@RequestMapping("/")
 	public String hello(ModelMap map) {
