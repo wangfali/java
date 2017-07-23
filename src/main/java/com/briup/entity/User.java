@@ -10,8 +10,6 @@ import java.io.Serializable;
 * @date 2017年7月15日 下午3:39:31
 *
  */
-
-
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String id;
