@@ -98,6 +98,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 性能监控 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<!-- devtools：是spring boot的一个热部署工具 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -124,11 +129,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<!-- <dependency>
+		 <dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.35</version>
-		</dependency> -->
+			<version>1.2.15</version>
+		</dependency> 
 	</dependencies>
 
 	<build>

@@ -4,6 +4,7 @@ import java.lang.reflect.Method;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurer;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
 import org.springframework.cache.interceptor.CacheErrorHandler;
@@ -11,6 +12,7 @@ import org.springframework.cache.interceptor.CacheResolver;
 import org.springframework.cache.interceptor.KeyGenerator;
 import org.springframework.cache.interceptor.SimpleKeyGenerator;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
 /**
@@ -21,6 +23,8 @@ import org.springframework.core.io.ClassPathResource;
  * @date 2017年7月23日 下午7:46:43
  *
  */
+@Configuration
+@EnableCaching
 public class EhcacheConfiguration implements CachingConfigurer {
 	/**
 	 * ehcache 主要的管理器
