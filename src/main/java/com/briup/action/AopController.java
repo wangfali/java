@@ -21,7 +21,7 @@ import com.briup.util.CommonUtil;
 * @date 2017年7月29日 上午11:31:56
 *
  */
-@RestController
+//@RestController
 public class AopController {
 	//注册日志对象
 	private final static Logger LOGGER =LoggerFactory.getLogger(AopController.class);
